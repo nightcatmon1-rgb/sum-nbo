@@ -12,7 +12,7 @@ return 1;
 uint32_t sum=0;
 
 for(int i=1; i<argc; i++) {
-FILE *fp fopen(argv[i], "rb");
+FILE *fp = fopen(argv[i], "rb");
 
 if(fp==NULL) {
 printf("Error: Can not open file %s", argv[i]);
